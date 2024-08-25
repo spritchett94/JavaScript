@@ -1,0 +1,41 @@
+{
+	"enableStatusBarItem": true,
+	"enableQuickPick": true,
+	"uploadOnSave": true,
+	"autoDelete": true,
+	"checkGitignore": false,
+	"activeTargets": [
+		"My FTP"
+	],
+	"concurrency": 5,
+	"ignore": [
+		".git/**/*",
+		".vscode/**/*"
+	],
+	"include": [],
+	"targets": [
+		{
+			"name": "My FTP",
+			"type": "ftp",
+			"host": "ftp.spritchett.mccweb.net",
+			"port": 21,
+			"user": "spritchett",
+			"password": "Melrose708!",
+			"dir": "/public_html",
+			"baseDir": "/",
+			"transferDataType": "binary"
+		},
+		{
+			"name": "My SFTP",
+			"type": "sftp",
+			"host": "ftp.spritchett.mccweb.net",
+			"port": 22,
+			"user": "spritchett",
+			"password": "Melrose708!",
+			"dir": "/public_html",
+			"baseDir": "/",
+			"privateKey": null,
+			"passphrase": null
+		}
+	]
+}
