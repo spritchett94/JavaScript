@@ -1,0 +1,74 @@
+:root {
+     --background-color: rgb(208, 179, 208);
+     --header-color: rgb(40, 40, 85);
+     --font-size: 2.5em;
+}
+
+body {
+     background-color: var(--background-color);
+}
+
+header {
+     color: var(--header-color);
+     text-align: center;
+     font-size: var(--font-size);
+}
+
+#welcome {
+     text-align: center;
+     font-style: italic;
+     font-size: 1.2em;
+}
+
+#photo {
+     display: block;
+     margin: 20px auto;
+}
+
+.buttons {
+     text-align: center;
+
+     button {
+          font-size: 1em;
+          background-color: white;
+          box-shadow: 2px 2px rgb(227, 223, 223);
+          border-radius: 5px;
+          padding: 3px 35px;
+          margin: 2px 3px;
+
+          &:hover {
+               background-color: rgb(134, 91, 175);
+               color: white;
+          }
+     }
+}
+
+.adjust {
+     font-size: .8em;
+     margin: 7px 5px;
+
+     button {
+          background-color: gray;
+          padding: 3px 28px;
+          color: white;
+
+          &:hover {
+               background-color: black;
+          }
+     }
+}
+
+.main {
+     background-color: white;
+     width: 50%;
+     display: block;
+     margin: auto;
+     margin-top: 23px;
+     padding: 5px 10px 10px 10px;
+}
+
+.intro {
+     button {
+          background-color: rgb(233, 230, 230);
+     }
+}
