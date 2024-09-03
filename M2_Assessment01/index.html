@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jude's Diner</title>
+     <link rel="stylesheet" href="css/styles.css">
+     <script src="scripts/scripts.js"></script>
+</head>
+<body onload="fresh()">
+     <header>
+          <h1>Jude's Diner</h1>
+     </header>
+     
+     <main>
+          <h2 class="online">Online Order</h2>
+          <form>
+               <div class="customer">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="fname"><br>
+               </div>
+               <div class="title">
+                    <h2>Sandwiches</h2>
+                    <h4>Quantity</h4>
+               </div>
+               <div class="menu" id="sandwich">
+                    <div class="items">
+                         <label for="grilledCheese">Grilled Cheese</label>
+                         <br>
+                         <label for="turkey">Turkey & Cheddar</label>
+                         <br>
+                         <label for="cuban">Cuban Panini</label>
+                         <br>
+                         <label for="beef">Italian Beef</label>
+                         <br>
+                         <label for="caprese">Caprese Melt</label>
+                    </div>
+                    <div class="price">
+                         <label for="grilledCheese">$5.25</label>
+                         <br>
+                         <label for="turkey">$7.50</label>
+                         <br>
+                         <label for="cuban">$8.25</label>
+                         <br>
+                         <label for="beef">$8.25</label>
+                         <br>
+                         <label for="caprese">$7.25</label>
+                    </div>
+                    <div class="numbers">
+                         <input type="text" id="grilledCheese">
+                         <br>
+                         <input type="text" id="turkey">
+                         <br>
+                         <input type="text" id="cuban">
+                         <br>
+                         <input type="text" id="beef">
+                         <br>
+                         <input type="text" id="caprese">
+                         <br>
+                    </div>
+               </div>
+
+               <div class="title st">
+                    <h2>Sides</h2>
+                    <h4>Quantity</h4>
+               </div>
+               <div class="menu" id="sides">
+                    <div class="items" id="sidesLabel">
+                         <label for="potatoSalad">Potato Salad</label>
+                         <br>
+                         <label for="chips">Kettle Chips</label>
+                         <br>
+                         <label for="fries">French Fries</label>
+                         <br>
+                         <label for="macSalad">Macaroni Salad</label>
+                         <br>
+                         <label for="curds">Cheese Curds</label>
+                    </div>
+                    <div class="price">
+                         <label for="potatoSalad">$3.25</label>
+                         <br>
+                         <label for="chips">$2.50</label>
+                         <br>
+                         <label for="fries">$1.25</label>
+                         <br>
+                         <label for="macSalad">$3.25</label>
+                         <br>
+                         <label for="curds">$3.75</label>
+                    </div>
+
+                    <div class="numbers" id="sidesNum">
+                         <input type="text" id="potatoSalad">
+                         <br>
+                         <input type="text" id="chips">
+                         <br>
+                         <input type="text" id="fries">
+                         <br>
+                         <input type="text" id="macSalad">
+                         <br>
+                         <input type="text" id="curds">
+                         <br>
+                    </div>
+               </div>
+
+               <div class="title dt">
+                    <h2>Drinks</h2>
+                    <h4>Quantity</h4>
+               </div>
+               <div class="menu" id="drinks">
+                    <div class="items" id="drinksLabel" >
+                         <label for="coke">Coca Cola</label>
+                         <br>
+                         <label for="arnold">Arnold Palmer</label>
+                         <br>
+                         <label for="drpepper">Dr. Pepper</label>
+                         <br>
+                         <label for="herbal">Herbal Ice Tea</label>
+                         <br>
+                         <label for="water">Bottled water</label>
+                    </div>
+                    <div class="price">
+                         <label for="coke">$1.85</label>
+                         <br>
+                         <label for="arnold">$2.50</label>
+                         <br>
+                         <label for="drpepper">$1.85</label>
+                         <br>
+                         <label for="herbal">$1.85</label>
+                         <br>
+                         <label for="water">$1.25</label>
+                    </div>
+                    <div class="numbers" id="drinkNum">
+                         <input type="text" id="coke">
+                         <br>
+                         <input type="text" id="arnold">
+                         <br>
+                         <input type="text" id="drpepper">
+                         <br>
+                         <input type="text" id="herbal">
+                         <br>
+                         <input type="text" id="water">
+                    </div>
+                    
+               </div>
+
+               <div class="bottom">
+                    <button type="button" onclick="order()">Place Order</button>
+                    <h3>Ticket:</h3>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p class="oS"></p>
+                    <p id="pay"></p>
+               </div>
+
+          </form>
+     </main>
+     <footer>
+          <h3>Sarah Pritchett</h3>
+     </footer>
+
+
+</body>
+</html>

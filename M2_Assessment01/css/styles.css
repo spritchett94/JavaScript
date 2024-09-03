@@ -1,0 +1,101 @@
+header {
+     text-align: center;
+     background-color: antiquewhite;
+}
+
+.online {
+     text-align: center;
+     font-style: italic;
+}
+
+.customer {
+     text-align: center;
+}
+
+.title {
+     display: flex;
+     width: 45%;
+     margin: 10px 550px;
+
+     h2 {
+          color: darkblue;
+          font-style: italic;
+     }
+
+     h4 {
+          padding-left: 310px;
+     }
+
+     &.dt {
+          h4 {
+               padding-left: 360px;
+          }
+     }
+
+     &.st {
+          h4 {
+               padding-left: 375px;
+          }
+     }
+
+}
+
+
+
+.menu {
+     display: flex;
+     width: 45%;
+     margin: auto;
+
+}
+
+
+
+.items {
+     margin: 0px 110px;
+     width: 43%;
+
+     label {
+          padding: 8px;
+          margin: 5px 15px;
+          font-size: 21px;
+     }
+}
+
+.price {
+     label {
+          font-size: 21px;
+          font-style: italic;
+          margin-right: 9px;
+     }
+}
+
+.numbers {
+     input {
+          width: 13px;
+          margin: 2px;
+     }
+
+     margin: 0px 10px;
+}
+
+.bottom {
+     text-align: center;
+     margin: 30px 0px;
+
+     button {
+          padding: 4px 18px;
+     }
+
+}
+
+#pay {
+     font-size: 23px;
+     background-color: antiquewhite;
+}
+
+footer {
+     text-align: center;
+     background-color: cadetblue;
+     color: white;
+}
