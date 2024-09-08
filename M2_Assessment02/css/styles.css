@@ -1,0 +1,41 @@
+header {
+     text-align: center;
+}
+
+.container {
+     display: flex;
+     justify-content: center;
+}
+
+#ob1,
+#ob2,
+#ob3,
+#ob4,
+#ob5 {
+     width: 15%;
+     display: inline-block;
+     border: 2px solid black;
+     margin: 3px;
+}
+
+#ob1 img,
+#ob2 img,
+#ob3 img,
+#ob4 img,
+#ob5 img {
+     width: 80%;
+     margin: auto 20px;
+}
+
+h2 {
+     text-align: center;
+}
+
+h3 {
+     padding-left: 26px;
+}
+
+h3,
+p {
+     display: inline-block;
+}
