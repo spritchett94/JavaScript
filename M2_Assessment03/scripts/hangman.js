@@ -44,7 +44,7 @@ document.getElementById("submit").addEventListener("click", function(event){
     if (found == false) {
         attemptsLeft--;
         wrong.push(userLetter.toUpperCase());
-        document.getElementById("wrong").innerHTML = wrong;
+        document.getElementById("guessed").innerHTML = wrong;
         const photos = ["images/02.png", "images/03.png", "images/04.png", "images/05.png", "images/06.png", "images/07.png"]
         if (attemptsLeft == 5) {
             document.getElementById("hangman").src = photos[0];
