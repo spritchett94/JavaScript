@@ -9,7 +9,7 @@ let letters = answer.split('');
 let attemptsLeft = 6;
 let output = '';
 let userLetter = '';
-let found = false;
+// let found = false;  Having this up here caused an error. 
 let wrong = [];
 
 function setup() {
@@ -29,10 +29,9 @@ document.getElementById("submit").addEventListener("click", function(event){
     userLetter = document.getElementById("guess").value;
     document.getElementById("guess").value = ''; //would this reset value to null
     
-
+    let found = false;
     for (let c = 0; c < answer.length; c++) {
         //alert(letters[c]);
-        // let found = false; 
         if (userLetter.toUpperCase() == letters[c]) {
             display[c] = userLetter.toUpperCase();
             win--;
@@ -43,6 +42,10 @@ document.getElementById("submit").addEventListener("click", function(event){
   
     if (found == false) {
         attemptsLeft--;
+        if (wrong.includes(userLetter.toUpperCase())) {
+            document.getElementById("twice").innerHTML = "That letter was guessed already. Please pick again.";
+            return;
+        }
         wrong.push(userLetter.toUpperCase());
         document.getElementById("guessed").innerHTML = wrong;
         const photos = ["images/02.png", "images/03.png", "images/04.png", "images/05.png", "images/06.png", "images/07.png"]
@@ -64,7 +67,7 @@ document.getElementById("submit").addEventListener("click", function(event){
         else if (attemptsLeft == 0) {
             document.getElementById("hangman").src = photos[5];
         }
- 
+        
     }
     
 
