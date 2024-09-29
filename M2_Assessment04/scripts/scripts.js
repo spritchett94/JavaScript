@@ -1,17 +1,8 @@
-// declare number
+// declare number, initialize userNumber and difference
 let number = Math.floor(Math.random() * 1001);
 var userNumber = 0;
 var difference = 0;
-// var diff = (number - userNumber);
 
-// function setup() {
-//     alert(answer);
-//     for (let i = 0; i < answer.length; i++) {
-//         display[i] = "_ ";
-//         output = output + display[i];
-//     }
-//     document.getElementById("word").innerHTML = output;
-// }
 
 
 document.getElementById("submit").addEventListener("click", function(event){
