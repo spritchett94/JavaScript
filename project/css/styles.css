@@ -10,6 +10,7 @@ body {
 
 header {
      background-image: url("../images/polka2.webp");
+     grid-area: header;
 
      & h1 {
           font-family: "Pacifico", cursive;
@@ -17,6 +18,7 @@ header {
           font-style: normal;
           text-align: center;
           font-size: 3em;
+          margin: 10px;
      }
 
 }
@@ -150,15 +152,102 @@ header {
 .wrapper {
      display: grid;
      grid-template-columns: 280px 280px 280px 280px 310px;
-     grid-template-rows: 325px 325px 325px;
-     /* 5 columns and 3 rows - each px in the row specifies the height of row1, row2, row3... etc*/
+     grid-template-rows: 100px 325px 325px 325px;
+     /* 5 columns and 4 rows - each px in the row specifies the height of row1, row2, row3... etc*/
      /* Originally had it set to 1fr 1fr 1fr BUT once I added context to my main, my header and footer grew larger.
      I don't want that so we changed that. Setting header and footer to 125px so it's stationary.*/
      grid-template-areas:
+          "header header header header header"
           "strawberry vanilla glazed choco cart"
           "double oreo jelly french cart"
           "mnm coconut boston bav cart"
      ;
      gap: 10px;
      margin: 20px;
+}
+
+@media only screen and (max-width: 1350px) {
+     .wrapper {
+          display: grid;
+          grid-template-columns: 280px 280px 280px 280px;
+          grid-template-rows: 100px 325px 325px 325px 325px;
+          grid-template-areas:
+               "header header header header"
+               "strawberry vanilla glazed cart"
+               "choco double oreo  cart"
+               "jelly french mnm  cart"
+               "coconut boston bav cart"
+          ;
+     }
+}
+
+@media only screen and (max-width: 1000px) {
+     .wrapper {
+          display: grid;
+          grid-template-columns: 280px 280px 280px;
+          grid-template-rows: 100px 325px 325px 325px 325px 325px 325px;
+          grid-template-areas:
+               "header header header"
+               "strawberry vanilla cart"
+               "glazed choco cart"
+               "double oreo cart"
+               "jelly french cart"
+               "mnm coconut cart"
+               "boston bav cart"
+          ;
+          margin-left: 40px;
+     }
+}
+
+@media only screen and (max-width: 770px) {
+     .wrapper {
+          display: grid;
+          grid-template-columns: 200px 200px 250px;
+          grid-template-rows: 100px 325px 325px 325px 325px 325px 325px;
+          grid-template-areas:
+               "header header header"
+               "strawberry vanilla cart"
+               "glazed choco cart"
+               "double oreo cart"
+               "jelly french cart"
+               "mnm coconut cart"
+               "boston bav cart"
+          ;
+          margin-left: 12px;
+     }
+
+     .card {
+          width: 200px;
+
+          & img {
+               height: 130px;
+          }
+     }
+}
+
+@media only screen and (max-width: 580px) {
+     .wrapper {
+          display: grid;
+          grid-template-columns: 260px 260px;
+          grid-template-rows: 100px 300px 300px 300px 300px 300px 300px 400px;
+          grid-template-areas:
+               "header header"
+               "strawberry vanilla"
+               "glazed choco"
+               "double oreo"
+               "jelly french"
+               "mnm coconut"
+               "boston bav"
+               "cart cart"
+          ;
+          margin-left: 12px;
+     }
+
+     .card {
+          width: 260px;
+
+          & img {
+               height: 130px;
+          }
+     }
 }

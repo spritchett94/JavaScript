@@ -77,7 +77,7 @@ const donut = [{
 
 
 function start() {
-     var donutLength = donut.length;
+    let donutLength = donut.length;
      for (i = 0; i < donutLength; i++) {
           document.getElementById('heading' + i).innerHTML = donut[i].heading;
           document.getElementById('img' + i).src = donut[i].image;
