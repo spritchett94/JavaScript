@@ -1,0 +1,164 @@
+* {
+     box-sizing: border-box;
+     /*border: 1px solid salmon;
+     */
+}
+
+body {
+     background-color: rgb(235, 171, 192);
+}
+
+header {
+     background-image: url("../images/polka2.webp");
+
+     & h1 {
+          font-family: "Pacifico", cursive;
+          font-weight: 400;
+          font-style: normal;
+          text-align: center;
+          font-size: 3em;
+     }
+
+}
+
+.card {
+     width: 270px;
+     border: 1px solid black;
+     box-shadow: 4px 4px 4px rgb(241, 240, 240);
+     border-radius: 3px;
+     background-color: white;
+
+     & img {
+          width: 100%;
+          height: 170px;
+     }
+
+     & h2 {
+          text-align: center;
+          float: left;
+          margin: 10px 0px 0px 0px;
+          padding-left: 6px;
+          font-family: "Caveat Brush", cursive;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.6em;
+     }
+
+     & p {
+          text-align: left;
+          padding-left: 6px;
+     }
+
+     & figcaption {
+          text-align: right;
+          padding: 14px 4px 0px 0px;
+
+     }
+
+     & button {
+          float: right;
+          margin: 5px 5px;
+          padding: 3px 10px;
+          border-radius: 5px;
+
+          &:hover {
+               background-color: pink;
+          }
+     }
+}
+
+.cart {
+     grid-area: cart;
+     background-color: rgb(255, 255, 255);
+     border: 3px solid rgb(88, 88, 88);
+     border-radius: 5px;
+     box-shadow: 3px 3px 3px darkgrey;
+
+     & h2 {
+          text-align: center;
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 2em;
+     }
+
+     & button {
+          position: absolute;
+          bottom: -600px;
+          padding: 10px 35px;
+          margin-left: 75px;
+          border-radius: 6px;
+          background-color: rgb(67, 100, 232);
+          font-size: 1.3em;
+          color: white;
+
+          &:hover {
+               background-color: pink;
+               color: black;
+          }
+     }
+}
+
+.bav {
+     grid-area: bav;
+}
+
+.boston {
+     grid-area: boston;
+}
+
+.choco {
+     grid-area: choco;
+}
+
+.coconut {
+     grid-area: coconut;
+}
+
+.double {
+     grid-area: double;
+}
+
+.french {
+     grid-area: french;
+}
+
+.glazed {
+     grid-area: glazed;
+}
+
+.jelly {
+     grid-area: jelly;
+}
+
+.mnm {
+     grid-area: mnm;
+}
+
+.oreo {
+     grid-area: oreo;
+}
+
+.strawberry {
+     grid-area: strawberry;
+}
+
+.vanilla {
+     grid-area: vanilla;
+}
+
+.wrapper {
+     display: grid;
+     grid-template-columns: 280px 280px 280px 280px 310px;
+     grid-template-rows: 325px 325px 325px;
+     /* 5 columns and 3 rows - each px in the row specifies the height of row1, row2, row3... etc*/
+     /* Originally had it set to 1fr 1fr 1fr BUT once I added context to my main, my header and footer grew larger.
+     I don't want that so we changed that. Setting header and footer to 125px so it's stationary.*/
+     grid-template-areas:
+          "strawberry vanilla glazed choco cart"
+          "double oreo jelly french cart"
+          "mnm coconut boston bav cart"
+     ;
+     gap: 10px;
+     margin: 20px;
+}
