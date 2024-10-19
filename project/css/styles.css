@@ -70,6 +70,17 @@ header {
 }
 
 .cart {
+     display: grid;
+     grid-template-columns: 70px 140px 70px;
+     grid-template-rows: 100px 825px 35px;
+     grid-template-areas:
+          "text text text"
+          "item item item"
+          ". btn ."
+     ;
+     gap: 10px;
+     /* margin: 20px; */
+
      grid-area: cart;
      background-color: rgb(255, 255, 255);
      border: 3px solid rgb(88, 88, 88);
@@ -77,6 +88,7 @@ header {
      box-shadow: 3px 3px 3px darkgrey;
 
      & h2 {
+          grid-area: text;
           text-align: center;
           font-family: "Bebas Neue", sans-serif;
           font-weight: 400;
@@ -84,11 +96,34 @@ header {
           font-size: 2em;
      }
 
+     & #item {
+          grid-area: item;
+
+          figure {
+               width: 28%;
+          }
+
+          img {
+               width: 100%;
+               float: left;
+          }
+
+          h3 {
+               float: right;
+               font-family: "Caveat Brush", cursive;
+               font-weight: 400;
+               font-style: normal;
+               font-size: 1.6em;
+          }
+
+     }
+
      & button {
-          position: absolute;
-          bottom: -460px;
-          padding: 10px 35px;
-          margin-left: 75px;
+          grid-area: btn;
+          /* position: absolute;
+               bottom: -460px; */
+          /* padding: 10px 35px; */
+          /* margin-left: 75px; */
           border-radius: 6px;
           background-color: rgb(67, 100, 232);
           font-size: 1.3em;
@@ -99,6 +134,7 @@ header {
                color: black;
           }
      }
+
 }
 
 .bav {
@@ -166,6 +202,10 @@ header {
      margin: 20px;
 }
 
+
+
+
+/************************************************  Media ***********************************************************/
 @media only screen and (max-width: 1350px) {
      .wrapper {
           display: grid;

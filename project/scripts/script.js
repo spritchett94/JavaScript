@@ -87,3 +87,10 @@ function start() {
      }
 
 }
+
+function order(num) {
+     var specificDonut = donut[num];
+     document.getElementById('itemImage').src = donut[num].image;
+     document.getElementById('itemHeading').innerHTML = donut[num].heading;
+
+}
