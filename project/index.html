@@ -13,23 +13,141 @@
           
 </head>
 
-<body onload=start()>
+<body onload="start()">
      <div class="wrapper">
           <header>
                <h1>Dolly's Donut's</h1>
           </header>
           <aside class="cart">
-               <h2>Cart</h2>
-               <div id="item">
+               <h2 class="title">Cart</h2>
+               <h4 class="col1">Item<hr></h4>
+               <h4 class="col2">Price<hr></h4>
+               <h4 class="col3">Qty<hr></h4>
+                    
+               <div id="item0">
                     <figure>
-                         <img src="" alt="" id="itemImage">
+                         <img src="" alt="" id="itemImage0">
                     </figure>
-                    <h3 id="itemHeading"></h3>
-                    <!-- <figcaption id="price0"></figcaption>
-                    <p id="description0"></p>
-                    <button onclick="order(0)">Add to Cart</button> -->
+                    <h3 id="itemHeading0"></h3>
+                    <p id="itemPrice0"></p>
+                    <p id="qty0"></p>
+                   <button id="removeBtn0" hidden>remove</button> 
+               </div>  
+
+               <div id="item1">  
+               <figure>
+                    <img src="" alt="" id="itemImage1">
+               </figure>
+               <h3 id="itemHeading1"></h3>
+               <p id="itemPrice1"></p>
+               <p id="qty1"></p>
+               <button id="removeBtn1" hidden>remove</button>
                </div>
-               <button>Purchase</button>
+
+               <div id="item2">
+                    <figure>
+                         <img src="" alt="" id="itemImage2">
+                    </figure>
+                    <h3 id="itemHeading2"></h3>
+                    <p id="itemPrice2"></p>
+                    <p id="qty2"></p>
+                    <button id="removeBtn2" hidden>remove</button>
+               </div>
+
+               <div id="item3">
+                    <figure>
+                         <img src="" alt="" id="itemImage3">
+                    </figure>
+                    <h3 id="itemHeading3"></h3>
+                    <p id="itemPrice3"></p>
+                    <p id="qty3"></p>
+                    <button id="removeBtn3" hidden>remove</button>
+               </div>
+
+               <div id="item4">
+                    <figure>
+                         <img src="" alt="" id="itemImage4">
+                    </figure>
+                    <h3 id="itemHeading4"></h3>
+                    <p id="itemPrice4"></p>
+                    <p id="qty4"></p>
+                    <button id="removeBtn4" hidden>remove</button>
+               </div>
+
+               <div id="item5">
+                    <figure>
+                         <img src="" alt="" id="itemImage5">
+                    </figure>
+                    <h3 id="itemHeading5"></h3>
+                    <p id="itemPrice5"></p>
+                    <p id="qty5"></p>
+                    <button id="removeBtn5" hidden>remove</button>
+               </div>
+
+               <div id="item6">
+                    <figure>
+                         <img src="" alt="" id="itemImage6">
+                    </figure>
+                    <h3 id="itemHeading6"></h3>
+                    <p id="itemPrice6"></p>
+                    <p id="qty6"></p>
+                    <button id="removeBtn6" hidden>remove</button>
+               </div>
+
+               <div id="item7">
+                    <figure>
+                         <img src="" alt="" id="itemImage7">
+                    </figure>
+                    <h3 id="itemHeading7"></h3>
+                    <p id="itemPrice7"></p>
+                    <p id="qty7"></p>
+                    <button id="removeBtn7" hidden>remove</button>
+               </div>
+
+               <div id="item8">
+                    <figure>
+                         <img src="" alt="" id="itemImage8">
+                    </figure>
+                    <h3 id="itemHeading8"></h3>
+                    <p id="itemPrice8"></p>
+                    <p id="qty8"></p>
+                    <button id="removeBtn8" hidden>remove</button>
+               </div>
+
+               <div id="item9">
+                    <figure>
+                         <img src="" alt="" id="itemImage9">
+                    </figure>
+                    <h3 id="itemHeading9"></h3>
+                    <p id="itemPrice9"></p>
+                    <p id="qty9"></p>
+                    <button id="removeBtn9" hidden>remove</button>
+               </div>
+
+               <div id="item10">
+                    <figure>
+                         <img src="" alt="" id="itemImage10">
+                    </figure>
+                    <h3 id="itemHeading10"></h3>
+                    <p id="itemPrice10"></p>
+                    <p id="qty10"></p>
+                    <button id="removeBtn10" hidden>remove</button>
+               </div>
+
+               <div id="item11">
+                    <figure>
+                         <img src="" alt="" id="itemImage11">
+                    </figure>
+                    <h3 id="itemHeading11"></h3>
+                    <p id="itemPrice11"></p>
+                    <p id="qty11"></p>
+                    <button id="removeBtn11" hidden>remove</button>
+               </div>
+
+               <h4 id="totalLabel">Total :</h4>
+               <h4 id="total">0</h4>
+               
+               <button onclick="purchase()" id="purchase">Purchase</button>
           </aside>
 
           <article class="card strawberry">
@@ -38,8 +156,8 @@
                </figure>
                <h2 id="heading0"></h2>
                <figcaption id="price0"></figcaption>
-               <p id="description0"></p>
-               <button onclick="order(0)">Add to Cart</button>
+               <!-- <p id="description0"></p> -->
+               <button onclick="order(0)" id="addBtn0">Add to Cart</button>
           </article>
 
           <article class="card vanilla">
@@ -48,8 +166,8 @@
                </figure>
                <h2 id="heading1"></h2>
                <figcaption id="price1"></figcaption>
-               <p id="description1"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description1"></p> -->
+               <button onclick="order(1)" id="addBtn1">Add to Cart</button>
           </article>
 
           <article class="card glazed">
@@ -58,8 +176,8 @@
                </figure>
                <h2 id="heading2"></h2>
                <figcaption id="price2"></figcaption>
-               <p id="description2"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description2"></p> -->
+               <button onclick="order(2)" id="addBtn2">Add to Cart</button>
           </article>
 
           <article class="card choco">
@@ -68,8 +186,8 @@
                </figure>
                <h2 id="heading3"></h2>
                <figcaption id="price3"></figcaption>
-               <p id="description3"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description3"></p> -->
+               <button onclick="order(3)" id="addBtn3">Add to Cart</button>
           </article>
 
           <article class="card double">
@@ -78,8 +196,8 @@
                </figure>
                <h2 id="heading4"></h2>
                <figcaption id="price4"></figcaption>
-               <p id="description4"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description4"></p> -->
+               <button onclick="order(4)" id="addBtn4">Add to Cart</button>
           </article>
 
           <article class="card oreo">
@@ -88,8 +206,8 @@
                </figure>
                <h2 id="heading5"></h2>
                <figcaption id="price5"></figcaption>
-               <p id="description5"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description5"></p> -->
+               <button onclick="order(5)" id="addBtn5">Add to Cart</button>
           </article>
 
           <article class="card jelly">
@@ -98,8 +216,8 @@
                </figure>
                <h2 id="heading6"></h2>
                <figcaption id="price6"></figcaption>
-               <p id="description6"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description6"></p> -->
+               <button onclick="order(6)" id="addBtn6">Add to Cart</button>
           </article>
 
           <article class="card french">
@@ -108,8 +226,8 @@
                </figure>
                <h2 id="heading7"></h2>
                <figcaption id="price7"></figcaption>
-               <p id="description7"> </p>
-               <button>Add to Cart</button>
+               <!-- <p id="description7"> </p> -->
+               <button onclick="order(7)" id="addBtn7">Add to Cart</button>
           </article>
 
           <article class="card mnm">
@@ -118,8 +236,8 @@
                </figure>
                <h2 id="heading8"></h2>
                <figcaption id="price8"></figcaption>
-               <p id="description8"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description8"></p> -->
+               <button onclick="order(8)" id="addBtn8">Add to Cart</button>
           </article>
 
           <article class="card coconut">
@@ -128,8 +246,8 @@
                </figure>
                <h2 id="heading9"></h2>
                <figcaption id="price9"></figcaption>
-               <p id="description9"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description9"></p> -->
+               <button onclick="order(9)" id="addBtn9">Add to Cart</button>
           </article>
 
           <article class="card boston">
@@ -138,20 +256,23 @@
                </figure>
                <h2 id="heading10"></h2>
                <figcaption id="price10"></figcaption>
-               <p id="description10"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description10"></p> -->
+               <button onclick="order(10)" id="addBtn10">Add to Cart</button>
           </article>
+
           <article class="card bav">
                <figure>
                     <img src="" alt="" id="img11">
                </figure>
                <h2 id="heading11"></h2>
                <figcaption id="price11"></figcaption>
-               <p id="description11"></p>
-               <button>Add to Cart</button>
+               <!-- <p id="description11"></p> -->
+               <button onclick="order(11)" id="addBtn11">Add to Cart</button>
           </article>
+     
           </div>
+          <a href="#" id="scroll"><button>Top</button></a>
+          
           <script src="scripts/script.js"></script>
 </body>
-
 </html>

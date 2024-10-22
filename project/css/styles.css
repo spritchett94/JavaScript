@@ -59,7 +59,7 @@ header {
 
      & button {
           float: right;
-          margin: 5px 5px;
+          margin: 50px 5px 5px 0px;
           padding: 3px 10px;
           border-radius: 5px;
 
@@ -71,15 +71,26 @@ header {
 
 .cart {
      display: grid;
-     grid-template-columns: 70px 140px 70px;
-     grid-template-rows: 100px 825px 35px;
+     grid-template-columns: 62px 62px 62px 62px 60px;
+     grid-template-rows: 65px 30px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 90px 90px 35px;
      grid-template-areas:
-          "text text text"
-          "item item item"
-          ". btn ."
+          ". title title title ."
+          "c1 c1 c1 c2 c3 "
+          "item0 item0 item0 item0 item0"
+          "item1 item1 item1 item1 item1"
+          "item2 item2 item2 item2 item2"
+          "item3 item3 item3 item3 item3"
+          "item4 item4 item4 item4 item4"
+          "item5 item5 item5 item5 item5"
+          "item6 item6 item6 item6 item6"
+          "item7 item7 item7 item7 item7"
+          "item8 item8 item8 item8 item8"
+          "item9 item9 item9 item9 item9"
+          "item10 item10 item10 item10 item10"
+          "item11 item11 item11 item11 item11"
+          ". . label label total"
+          ". btn btn btn ."
      ;
-     gap: 10px;
-     /* margin: 20px; */
 
      grid-area: cart;
      background-color: rgb(255, 255, 255);
@@ -87,43 +98,168 @@ header {
      border-radius: 5px;
      box-shadow: 3px 3px 3px darkgrey;
 
-     & h2 {
-          grid-area: text;
+     & .title {
+          grid-area: title;
           text-align: center;
           font-family: "Bebas Neue", sans-serif;
           font-weight: 400;
           font-style: normal;
           font-size: 2em;
+          margin-left: -10px;
+
      }
 
-     & #item {
-          grid-area: item;
+     & .col1 {
+          grid-area: c1;
+          margin-left: 5px;
+     }
+
+     & .col2 {
+          grid-area: c2;
+     }
+
+     & .col3 {
+          grid-area: c3;
+     }
+
+     & #totalLabel {
+          grid-area: label;
+          text-align: center;
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1.2em;
+     }
+
+     & #total {
+          grid-area: total;
+          font-size: 1.2em;
+     }
+
+     & #item0,
+     #item1,
+     #item2,
+     #item3,
+     #item4,
+     #item4,
+     #item5,
+     #item6,
+     #item7,
+     #item8,
+     #item9,
+     #item10,
+     #item11 {
+          display: grid;
+          grid-template-columns: 82px 100px 60px 52px;
+          grid-template-rows: 40px 20px;
+          grid-template-areas:
+               "img name price qty"
+               ". . . remove"
+          ;
+          margin: 5px 0px;
 
           figure {
-               width: 28%;
+               margin-left: 10px;
+               grid-area: img;
+
           }
 
           img {
                width: 100%;
-               float: left;
           }
 
           h3 {
-               float: right;
+               grid-area: name;
                font-family: "Caveat Brush", cursive;
                font-weight: 400;
                font-style: normal;
-               font-size: 1.6em;
+               font-size: 1em;
+          }
+
+          p {
+               grid-area: price;
+
+          }
+
+          #qty0,
+          #qty1,
+          #qty2,
+          #qty3,
+          #qty4,
+          #qty5,
+          #qty6,
+          #qty7,
+          #qty8,
+          #qty9,
+          #qty10,
+          #qty11 {
+               grid-area: qty;
+          }
+
+          button {
+               grid-area: remove;
+               background-color: rgb(67, 100, 232);
+               color: white;
+               font-size: .8em;
+               border-radius: 6px;
+
+               &:hover {
+                    background-color: red;
+               }
           }
 
      }
 
-     & button {
+     & #item0 {
+          grid-area: item0;
+     }
+
+     & #item1 {
+          grid-area: item1;
+     }
+
+     & #item2 {
+          grid-area: item2;
+     }
+
+     & #item3 {
+          grid-area: item3;
+     }
+
+     & #item4 {
+          grid-area: item4;
+     }
+
+     & #item5 {
+          grid-area: item5;
+     }
+
+     & #item6 {
+          grid-area: item6;
+     }
+
+     & #item7 {
+          grid-area: item7;
+     }
+
+     & #item8 {
+          grid-area: item8;
+     }
+
+     & #item9 {
+          grid-area: item9;
+     }
+
+     & #item10 {
+          grid-area: item10;
+     }
+
+     & #item11 {
+          grid-area: item11;
+     }
+
+     & #purchase {
           grid-area: btn;
-          /* position: absolute;
-               bottom: -460px; */
-          /* padding: 10px 35px; */
-          /* margin-left: 75px; */
           border-radius: 6px;
           background-color: rgb(67, 100, 232);
           font-size: 1.3em;
@@ -185,6 +321,23 @@ header {
      grid-area: vanilla;
 }
 
+#scroll {
+     float: right;
+     margin: 0px 10px 10px 0px;
+
+     & button {
+          border-radius: 6px;
+          background-color: rgb(67, 100, 232);
+          font-size: 1.1em;
+          color: white;
+          padding: 3px 20px;
+
+          &:hover {
+               background-color: rgb(1, 24, 113);
+          }
+     }
+}
+
 .wrapper {
      display: grid;
      grid-template-columns: 280px 280px 280px 280px 310px;
@@ -209,14 +362,38 @@ header {
 @media only screen and (max-width: 1350px) {
      .wrapper {
           display: grid;
-          grid-template-columns: 280px 280px 280px 280px;
+          grid-template-columns: 280px 280px 280px 300px;
           grid-template-rows: 100px 325px 325px 325px 325px;
           grid-template-areas:
                "header header header header"
                "strawberry vanilla glazed cart"
                "choco double oreo  cart"
                "jelly french mnm  cart"
-               "coconut boston bav cart"
+               "coconut boston bav ."
+          ;
+     }
+
+     .cart {
+          display: grid;
+          grid-template-columns: 60px 60px 60px 60px 55px;
+          grid-template-rows: 65px 30px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 90px 90px 35px;
+          grid-template-areas:
+               ". title title title ."
+               "c1 c1 c1 c2 c3 "
+               "item0 item0 item0 item0 item0"
+               "item1 item1 item1 item1 item1"
+               "item2 item2 item2 item2 item2"
+               "item3 item3 item3 item3 item3"
+               "item4 item4 item4 item4 item4"
+               "item5 item5 item5 item5 item5"
+               "item6 item6 item6 item6 item6"
+               "item7 item7 item7 item7 item7"
+               "item8 item8 item8 item8 item8"
+               "item9 item9 item9 item9 item9"
+               "item10 item10 item10 item10 item10"
+               "item11 item11 item11 item11 item11"
+               ". . label label total"
+               ". btn btn btn ."
           ;
      }
 }
@@ -224,19 +401,20 @@ header {
 @media only screen and (max-width: 1000px) {
      .wrapper {
           display: grid;
-          grid-template-columns: 280px 280px 280px;
+          grid-template-columns: 280px 280px 300px;
           grid-template-rows: 100px 325px 325px 325px 325px 325px 325px;
           grid-template-areas:
                "header header header"
                "strawberry vanilla cart"
                "glazed choco cart"
                "double oreo cart"
-               "jelly french cart"
-               "mnm coconut cart"
-               "boston bav cart"
+               "jelly french ."
+               "mnm coconut ."
+               "boston bav ."
           ;
           margin-left: 40px;
      }
+
 }
 
 @media only screen and (max-width: 770px) {
@@ -249,11 +427,35 @@ header {
                "strawberry vanilla cart"
                "glazed choco cart"
                "double oreo cart"
-               "jelly french cart"
-               "mnm coconut cart"
-               "boston bav cart"
+               "jelly french ."
+               "mnm coconut ."
+               "boston bav .cart"
           ;
           margin-left: 12px;
+     }
+
+     .cart {
+          display: grid;
+          grid-template-columns: 60px 60px 60px 60px;
+          grid-template-rows: 65px 30px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 90px 90px 35px;
+          grid-template-areas:
+               "title title title title"
+               "c1 c1 c2 c3 "
+               "item0 item0 item0 item0"
+               "item1 item1 item1 item1"
+               "item2 item2 item2 item2"
+               "item3 item3 item3 item3"
+               "item4 item4 item4 item4 "
+               "item5 item5 item5 item5 "
+               "item6 item6 item6 item6 "
+               "item7 item7 item7 item7 "
+               "item8 item8 item8 item8 "
+               "item9 item9 item9 item9 "
+               "item10 item10 item10 item10 "
+               "item11 item11 item11 item11 "
+               ".  label label total"
+               ". btn btn btn "
+          ;
      }
 
      .card {
