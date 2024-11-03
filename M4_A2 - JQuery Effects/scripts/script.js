@@ -8,13 +8,13 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $("#btn2").click(function(){
+  $("#btn3").click(function(){
     $("#img2").fadeToggle(3000);
   });
 });
 
 $(document).ready(function(){
-  $("#btn3").click(function(){
+  $("#btn4").click(function(){
     $("#panel").slideToggle("slow");
   });
 });
