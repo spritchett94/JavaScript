@@ -1,0 +1,54 @@
+* {
+     text-align: center;
+}
+
+body {
+     background-color: beige;
+}
+
+h2 {
+     text-decoration: underline;
+     text-align: left;
+     margin-left: 75px;
+}
+
+
+
+button {
+     float: left;
+     margin: 0px 400px 10px 75px;
+     padding: 6px 15px;
+
+}
+
+#btn1 {
+     margin: 0px 10px 10px 75px;
+
+}
+
+#btn2 {
+     margin-left: 10px;
+
+}
+
+
+img {
+     width: 80%;
+     max-height: 500px;
+}
+
+div {
+     width: 50%;
+     margin: auto;
+     padding: 20px 5px;
+     background-color: antiquewhite;
+     display: block;
+}
+
+#panel p {
+     text-align: left;
+}
+
+#slide {
+     padding-bottom: 100px;
+}
