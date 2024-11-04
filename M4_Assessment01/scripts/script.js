@@ -1,4 +1,6 @@
-$(document).ready(function(){
+// This assign. uses animate(), chaining, callback, and stop() //
+
+$(document).ready(function () {
      
 	$("#up").click(function(){
 		$("#box").animate({
