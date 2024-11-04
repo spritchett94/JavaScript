@@ -13,7 +13,7 @@ h2 {
      width: 100px;
      height: 100px;
      position: relative;
-     margin: 100px 0px 10px 330px;
+     margin: 180px 0px 10px 330px;
 }
 
 .container {
@@ -21,10 +21,15 @@ h2 {
      width: 50%;
      margin: auto;
      text-align: center;
-     height: 400px;
+     height: 540px;
      padding-top: 10px;
 
      & button {
           padding: 5px 30px;
      }
+}
+
+#stop {
+     background-color: rgba(255, 0, 0, 0.515);
+
 }
