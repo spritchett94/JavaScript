@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function(){
      
 	$("#up").click(function(){
 		$("#box").animate({
@@ -33,7 +33,7 @@ $(document).ready(function () {
 	});
 
 	$("#stop").click(function(){
-    $("#box").stop();
-  });
+    		$("#box").stop();
+  	});
 
 });
