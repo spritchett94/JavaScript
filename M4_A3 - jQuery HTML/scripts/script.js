@@ -18,7 +18,7 @@ $(document).ready(function(){
           $("#meal").val("blank");
      });
 
-     $("#dark").click(function () {
+     $("#dark").click(function(){
           $("body").removeClass("light");
           $("body").addClass("dark");
           $(".heading").addClass("heading_dark");
@@ -27,7 +27,7 @@ $(document).ready(function(){
           $(".container").removeClass("container_light");
      });
 
-     $("#light").click(function () {
+     $("#light").click(function(){
           $("body").removeClass("dark");
           $("body").addClass("light");
           $(".heading").addClass("heading_light");
@@ -36,19 +36,17 @@ $(document).ready(function(){
           $(".container").removeClass("container_dark");
      });
 
-     $("#small").click(function () {
+     $("#small").click(function(){
           var currentFontSize = parseInt($(".container").css('font-size'));
           currentFontSize -= 2;
           setFont = currentFontSize + "px";
           $(".container").css("font-size", setFont);
-          
      });
 
-     $("#large").click(function () {
+     $("#large").click(function(){
           var currentFontSize = parseInt($(".container").css('font-size'));
           currentFontSize += 2;
           setFont = currentFontSize + "px";
           $(".container").css("font-size", setFont);
-          
      });
 });
