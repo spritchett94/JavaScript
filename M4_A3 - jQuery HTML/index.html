@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>jQuery HTML</title>
+     <link rel="stylesheet" href="css/styles.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <script src="scripts/script.js"></script>
+</head>
+<body>
+     <header>
+          <h1 class="heading">jQuery HTML</h1>
+     </header>
+     <nav>
+          <button id="light">Light</button>
+          <button id="dark">Dark</button>
+          <button id="small">Decrease Font</button>
+          <button id="large">Increase Font</button>
+     </nav>
+     <main class="container">
+          <form>
+               <div class="top">
+                    <h2 class="heading">Wedding Guest Invitation</h2>
+                    <label for="fname">Name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="lname"><br>
+                    <label for="lname">Will You Attend?:</label>
+                    <select id="attend">
+                         <option value="blank">---</option>
+                         <option value="Yes">Yes</option>
+                         <option value="No">No</option>
+                    </select><br>
+                    <label for="guests">Number of Guests:</label>
+                    <input type="text" id="guests" name="guests"><br>
+                    <label for="meal">Meal Preference:</label>
+                    <select id="meal" name="meal">
+                         <option value="blank">---</option>
+                         <option value="Chicken">Chicken</option>
+                         <option value="Beef">Beef</option>
+                         <option value="Fish">Fish</option>
+                         <option value="Veg">Vegetarian</option>
+                    </select>
+               </div>
+               <div class="bottom">
+                    <button id="rsvp" >RSVP</button>
+                    
+               </div>
+          </form>
+          <h3>Guest List:</h3>
+          <p id="list"></p>
+     </main>
+     
+     <footer>
+          <h4>&copy; Sarah Pritchett</h4>
+     </footer>
+</body>
+
+</html>
